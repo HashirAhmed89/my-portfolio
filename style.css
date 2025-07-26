@@ -1,0 +1,382 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: black;
+}
+
+:root {
+  --hover-color: #D20707;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+}
+
+/* NAVBAR */
+.logo h2 {
+  font-size: 28px;
+  margin-left: 50px;
+  font-weight: 700;
+  
+}
+
+.logo h2:hover {
+  color: var(--hover-color);
+  cursor: pointer;
+  transform: translateY(-5px);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.navbar {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.services ul {
+  display: flex;
+  gap: 30px;
+  margin-right: 30px;
+}
+
+ul li {
+  list-style: none;
+  font-size: 18px;
+}
+
+.services ul li:hover {
+  color: var(--hover-color);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.services ul a{
+  text-decoration: none;
+}
+
+/* HERO SECTION */
+.hero-section {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.left {
+  height: 50%;
+  width: 50%;
+  position: relative;
+}
+
+.left h2 {
+  font-size: 35px;
+  position: absolute;
+  top: 50%;
+  left: 38%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.left h4 {
+  font-size: 20px;
+  position: absolute;
+  top: 65%;
+  left: 38%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.red {
+  color: var(--hover-color);
+}
+
+.left h2:hover,
+.left h4:hover {
+  color: var(--hover-color);
+  transition: color 0.3s ease;
+}
+
+.right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.right img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* ABOUT SECTION */
+.about-sec {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.left-img {
+  width: 40%;
+  margin-left: 30px;
+}
+
+.left-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.about {
+  height: auto;
+  width: 50%;
+  padding: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.about p {
+  font-size: 16px;
+  line-height: 1.8;
+  word-spacing: 3px;
+}
+
+.about h2:hover {
+  color: var(--hover-color);
+  transition: color 0.3s ease;
+}
+
+/* TITLES SECTION - Skills/Experience/Education */
+.titles {
+  padding: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.section {
+  margin-bottom: 30px;
+  border-left: 4px solid var(--hover-color);
+  padding-left: 20px;
+}
+
+.link {
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 10px;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: var(--hover-color);
+  text-decoration: underline;
+}
+
+.content {
+  display: none;
+  padding-left: 10px;
+  padding-top: 10px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: white;
+}
+
+.content ul {
+  list-style: none;
+  padding-left: 15px;
+}
+
+.content ul li {
+  margin-bottom: 10px;
+}
+
+.content ul li span {
+  font-weight: bold;
+  color: var(--hover-color);
+}
+
+/* SERVICES SECTION */
+.service-sec {
+  width: 100%;
+  height: auto;
+}
+
+.service-sec h2 {
+  text-align: center;
+}
+
+.service-sec h2:hover {
+  color: var(--hover-color);
+}
+
+.service-box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.serviceforu {
+  width: 25%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px white;
+}
+
+.serviceforu h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.serviceforu p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.serviceforu h3:hover {
+  color: var(--hover-color);
+}
+
+.serviceforu:hover {
+  transform: translateY(-10px);
+  transition: transform 0.3s ease;
+}
+
+/* WORK SECTION */
+.work {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.work h2 {
+  font-size: 29px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.images-work {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.images-work img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.images-work img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* CONTACT SECTION */
+.contact {
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 100px;
+  padding: 50px;
+}
+
+.my-contact {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: white;
+}
+
+.row i {
+  color: var(--hover-color);
+  font-size: 22px;
+}
+
+.social-icon {
+  display: flex;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.social-icon a {
+  color: white;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.social-icon a:hover {
+  color: var(--hover-color);
+}
+
+.btn {
+  margin-top: 15px;
+  background-color: var(--hover-color);
+  border: none;
+  padding: 10px 10px;
+  width: 200px;
+  color: white;
+  font-size: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.userText {
+  flex: 1 1 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.userText input,
+.userText textarea {
+  background-color: #2c2c2c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 15px;
+  font-size: 15px;
+}
+
+.userText textarea {
+  resize: vertical;
+  min-height: 120px;
+}

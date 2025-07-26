@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #111;
+  border-bottom: 3px solid #D20707;
+  margin-bottom: 40px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  color: #D20707;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #ccc;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Services Section */
+.services-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.service-card {
+  background-color: #111;
+  border: 1px solid #D20707;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(210, 7, 7, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 40px rgba(210, 7, 7, 0.6);
+}
+
+.service-card h2 {
+  color: #D20707;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.service-card p {
+  color: #ddd;
+  font-size: 16px;
+}
